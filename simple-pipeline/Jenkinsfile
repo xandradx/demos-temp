@@ -23,10 +23,14 @@ pipeline {
             }
         }
 
-       
         stage('stage 2') {
             steps {
                 sh 'echo hello from stage 2!. This is the last stage...'
+            }
+        }
+        stage('stage 3') {
+            steps {
+                sh 'echo hello from stage 3!. This is the last stage...'
             }
         }
 
